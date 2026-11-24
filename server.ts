@@ -1,3 +1,4 @@
+import admin from 'firebase-admin';
 import crypto from 'node:crypto';
 import express from 'express';
 import fs from 'node:fs';
