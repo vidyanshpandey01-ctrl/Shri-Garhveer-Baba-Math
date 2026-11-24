@@ -1,0 +1,207 @@
+{
+  "memberSeq": 5,
+  "receiptSeq": 5,
+  "events": [
+    {
+      "id": "evt-1",
+      "title": "Shri Garhveer Baba Monthly Satsang & Maha Aarti",
+      "dateLabel": "Sunday, 29 Nov",
+      "timeLabel": "6:30 AM – 10:30 AM",
+      "location": "Main Sanctum Courtyard"
+    },
+    {
+      "id": "evt-2",
+      "title": "Annakshetra Samuhik Prasad Bhandara",
+      "dateLabel": "Wednesday, 2 Dec",
+      "timeLabel": "12:00 PM – 3:00 PM",
+      "location": "Math Bhojanshala Hall"
+    },
+    {
+      "id": "evt-3",
+      "title": "Gau Seva & Winter Shelter Maintenance Drive",
+      "dateLabel": "Saturday, 5 Dec",
+      "timeLabel": "8:00 AM – 1:00 PM",
+      "location": "Shri Garhveer Gaushala"
+    }
+  ],
+  "members": [
+    {
+      "id": "mem-1795533659100",
+      "memberCode": "SGBM-2026-0004",
+      "name": "Vikramaditya Joshi",
+      "gotra": "Shandilya",
+      "phone": "9829912345",
+      "address": "45 Temple Lane, Gangashahar",
+      "city": "Bikaner",
+      "role": "Devotee Member",
+      "status": "Approved",
+      "createdAt": "2026-11-24T15:20:59.100Z"
+    },
+    {
+      "id": "mem-1",
+      "memberCode": "SGBM-2026-0001",
+      "name": "Rameshwar Sharma",
+      "gotra": "Bharadwaj",
+      "phone": "9829011223",
+      "address": "14 Mandir Marg, Civil Lines",
+      "city": "Jaipur",
+      "role": "Prabandhak Committee",
+      "status": "Approved",
+      "createdAt": "2026-11-14T15:20:25.822Z"
+    },
+    {
+      "id": "mem-2",
+      "memberCode": "SGBM-2026-0002",
+      "name": "Savitri Devi Choudhary",
+      "gotra": "Kashyap",
+      "phone": "9414055667",
+      "address": "28 Station Road, Ward 9",
+      "city": "Sikar",
+      "role": "Seva Volunteer",
+      "status": "Approved",
+      "createdAt": "2026-11-19T15:20:25.822Z"
+    },
+    {
+      "id": "mem-3",
+      "memberCode": "SGBM-2026-0003",
+      "name": "Mahendra Singh Rathore",
+      "gotra": "Vashistha",
+      "phone": "9784122334",
+      "address": "72 Fort Colony, Near Bus Stand",
+      "city": "Jhunjhunu",
+      "role": "Devotee Member",
+      "status": "Pending",
+      "createdAt": "2026-11-24T09:20:25.822Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": "post-1",
+      "authorName": "Rameshwar Sharma",
+      "authorGotra": "Bharadwaj",
+      "authorCity": "Jaipur",
+      "category": "Announcement",
+      "title": "Preparation Schedule for Monthly Maha Satsang & Annakshetra",
+      "content": "Jai Shri Garhveer Baba. All devotees and seva volunteers are requested to gather at the main sanctum courtyard by 6:00 AM this Sunday for morning Abhishek, Bhajan Sandhya, and Annakshetra Prasad Seva. Families traveling from Sikar and Jhunjhunu may register their arrival at the Yatri Niwas desk.",
+      "imageUrl": "/src/assets/images/math_sanctum_banner_1795533370707.jpg",
+      "likes": 29,
+      "pinned": true,
+      "comments": [
+        {
+          "id": "c-1",
+          "authorName": "Savitri Devi Choudhary",
+          "authorCity": "Sikar",
+          "text": "Jai Baba ki. Our Sikar seva group will arrive Saturday evening to help with flower garlands and prasad preparation.",
+          "createdAt": "2026-11-24T12:20:25.822Z"
+        },
+        {
+          "id": "c-1795533656724",
+          "authorName": "Harish Chandra",
+          "text": "Jai Baba ki, looking forward to Sunday Satsang.",
+          "createdAt": "2026-11-24T15:20:56.724Z"
+        }
+      ],
+      "createdAt": "2026-11-24T10:20:25.822Z"
+    },
+    {
+      "id": "post-2",
+      "authorName": "Savitri Devi Choudhary",
+      "authorGotra": "Kashyap",
+      "authorCity": "Sikar",
+      "category": "Seva",
+      "title": "Successful Samuhik Prasad Seva — Over 450 Devotees Served",
+      "content": "With the blessings of Shri Garhveer Baba and tireless dedication from our youth volunteers, yesterday’s Annakshetra Bhandara concluded peacefully with warm sattvic prasad served to over 450 devotees and travelers.",
+      "imageUrl": "/src/assets/images/community_satsang_event_1795533370501.jpg",
+      "likes": 42,
+      "pinned": false,
+      "comments": [
+        {
+          "id": "c-2",
+          "authorName": "Devendra Joshi",
+          "authorCity": "Alwar",
+          "text": "Heartfelt gratitude to all volunteers who arranged everything so respectfully.",
+          "createdAt": "2026-11-24T01:20:25.822Z"
+        }
+      ],
+      "createdAt": "2026-11-23T21:20:25.822Z"
+    },
+    {
+      "id": "post-3",
+      "authorName": "Pt. Govind Narayan",
+      "authorGotra": "Gautam",
+      "authorCity": "Garhveer Dham",
+      "category": "Satsang",
+      "title": "Morning Aarti & Veda Path Timings for Winter Months",
+      "content": "Please note the revised winter schedule at Shri Garhveer Baba Math: Mangala Aarti at 5:30 AM, Shringar Darshan at 8:00 AM, and Sandhya Deep Aarti at 6:15 PM daily. Devotees may offer Deepdan Seva before sunset.",
+      "likes": 19,
+      "pinned": false,
+      "comments": [],
+      "createdAt": "2026-11-23T07:20:25.822Z"
+    }
+  ],
+  "donations": [
+    {
+      "id": "don-1795533660470",
+      "receiptNumber": "SEVA-2026-0004",
+      "donorName": "Vikramaditya Joshi",
+      "phone": "9829912345",
+      "amount": 1101,
+      "purpose": "Annakshetra & Prasad Seva",
+      "utrReference": "433199887766",
+      "status": "Verified",
+      "createdAt": "2026-11-24T15:21:00.470Z"
+    },
+    {
+      "id": "don-1",
+      "receiptNumber": "SEVA-2026-0001",
+      "donorName": "Rameshwar Sharma",
+      "phone": "9829011223",
+      "amount": 2101,
+      "purpose": "Annakshetra & Prasad Seva",
+      "utrReference": "432819402218",
+      "status": "Verified",
+      "createdAt": "2026-11-22T15:20:25.822Z"
+    },
+    {
+      "id": "don-2",
+      "receiptNumber": "SEVA-2026-0002",
+      "donorName": "Kailash Chandra Agarwal",
+      "phone": "9828033445",
+      "amount": 5101,
+      "purpose": "Mandir Renovation & Upkeep",
+      "utrReference": "432910448812",
+      "status": "Verified",
+      "createdAt": "2026-11-23T19:20:25.822Z"
+    },
+    {
+      "id": "don-3",
+      "receiptNumber": "SEVA-2026-0003",
+      "donorName": "Anita Devi Verma",
+      "phone": "9929144556",
+      "amount": 1101,
+      "purpose": "Gau Seva",
+      "utrReference": "433011902234",
+      "status": "Pending Verification",
+      "createdAt": "2026-11-24T11:20:25.822Z"
+    }
+  ],
+  "admins": [
+    {
+      "phone": "8127854042",
+      "name": "Math Super Admin",
+      "role": "SuperAdmin",
+      "addedAt": "2026-11-24T15:44:22.559Z"
+    },
+    {
+      "phone": "9414055667",
+      "name": "Savitri Devi Choudhary",
+      "role": "Admin",
+      "addedAt": "2026-11-24T15:44:22.944Z",
+      "addedBy": "8127854042"
+    }
+  ],
+  "adminPinHash": {
+    "salt": "fbf91d12bc890f9bfb6cdc9d01ea9284",
+    "hash": "e051a63c5261d40aa613015d014d4ee6fe50e22f5b11b70d776f287d9e9631341acc1ab5b40f455eea7ba065d5ed1101f8a1c66390becdd40f647155d1e6c5d9"
+  }
+}

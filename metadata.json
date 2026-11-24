@@ -1,0 +1,6 @@
+{
+  "name": "Shri Garhveer Baba Math",
+  "description": "Sacred community portal for Shri Garhveer Baba Math featuring a Kutumb-style community feed, online membership registration, digital ID card generator, UPI donations, and admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
