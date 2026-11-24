@@ -66,6 +66,13 @@ export const api = {
     });
   },
 
+  firebaseLogin(idToken: string): Promise<{ token: string; user: AuthSessionUser }> {
+    return requestJson('/api/auth/firebase-login', {
+      method: 'POST',
+      body: JSON.stringify({ idToken }),
+    });
+  },
+
   setupAdminPin(pin: string): Promise<{ user: AuthSessionUser }> {
     return requestJson('/api/auth/setup-admin-pin', {
       method: 'POST',
@@ -109,97 +116,3 @@ export const api = {
       body: JSON.stringify({ delta }),
     });
   },
-
-  addComment(
-    postId: string,
-    payload: { authorName: string; authorCity?: string; text: string },
-  ): Promise<Post> {
-    return requestJson<Post>(`/api/posts/${postId}/comments`, {
-      method: 'POST',
-      body: JSON.stringify(payload),
-    });
-  },
-
-  registerMember(payload: {
-    name: string;
-    gotra: string;
-    phone: string;
-    address: string;
-    city: string;
-    role?: string;
-  }): Promise<Member> {
-    return requestJson<Member>('/api/members', {
-      method: 'POST',
-      body: JSON.stringify(payload),
-    });
-  },
-
-  lookupMember(query: string): Promise<Member> {
-    return requestJson<Member>(
-      `/api/members/lookup?q=${encodeURIComponent(query)}`,
-    );
-  },
-
-  submitDonation(payload: {
-    donorName: string;
-    phone: string;
-    amount: number;
-    purpose: DonationPurpose;
-    utrReference: string;
-  }): Promise<Donation> {
-    return requestJson<Donation>('/api/donations', {
-      method: 'POST',
-      body: JSON.stringify(payload),
-    });
-  },
-
-  updateMemberStatus(memberId: string, status: MemberStatus): Promise<Member> {
-    return requestJson<Member>(`/api/admin/members/${memberId}`, {
-      method: 'PATCH',
-      body: JSON.stringify({ status }),
-    });
-  },
-
-  deleteMember(memberId: string): Promise<{ deletedId: string }> {
-    return requestJson<{ deletedId: string }>(`/api/admin/members/${memberId}`, {
-      method: 'DELETE',
-    });
-  },
-
-  togglePinPost(postId: string, pinned: boolean): Promise<Post> {
-    return requestJson<Post>(`/api/admin/posts/${postId}`, {
-      method: 'PATCH',
-      body: JSON.stringify({ pinned }),
-    });
-  },
-
-  deletePost(postId: string): Promise<{ deletedId: string }> {
-    return requestJson<{ deletedId: string }>(`/api/admin/posts/${postId}`, {
-      method: 'DELETE',
-    });
-  },
-
-  updateDonationStatus(
-    donationId: string,
-    status: DonationStatus,
-  ): Promise<Donation> {
-    return requestJson<Donation>(`/api/admin/donations/${donationId}`, {
-      method: 'PATCH',
-      body: JSON.stringify({ status }),
-    });
-  },
-
-  grantAdminAccess(phone: string, name?: string): Promise<AdminRecord[]> {
-    return requestJson<AdminRecord[]>('/api/admin/admins', {
-      method: 'POST',
-      body: JSON.stringify({ phone, name }),
-    });
-  },
-
-  revokeAdminAccess(phone: string): Promise<AdminRecord[]> {
-    return requestJson<AdminRecord[]>(
-      `/api/admin/admins/${encodeURIComponent(phone)}`,
-      { method: 'DELETE' },
-    );
-  },
-};
